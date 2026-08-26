@@ -4,7 +4,6 @@
 .riscado{
     text-decoration: line-through;
 }
-<!--Texto estilizado: Adicione outro parágrafo mostrando um texto com: Cor azul Tamanho de fonte maior Use CSS inline para aplicar esses estilos!-->
 .azul_maior{
     color:blue;
     font-size: 60px;
