@@ -11,15 +11,18 @@
   </header>
 
   <main>
+    <!--<p>Add Imagem</p>-->
     <img src="Exercício 4\Imagens\imagem1.jpeg" alt="Imagem de exemplo">
     <img src="Exercício 4\Imagens\imagem2.png" alt="Imagem de exemplo2" width="100">
     <img src="Exercício 4\Imagens\imagem3.jpg" alt="Imagem de exemplo3" height="200">
     <video src="Exercício 4\Video\video1.mp4" alt="Video de exemplo"></video>
     <audio controls>
+      <!--Add Audio-->
       <source src="Exercício 4\Audio\audio1.mp3" type="audio/mpeg">
       <source src="Exercício 4\Audio\audio1.ogg" type="audio/ogg">
       Seu navegador não suporta áudio
     </audio>
+    <!--Form de nome e email e mensagem com botão de enviar-->
     <form action="processar.php" method="post">  
       <label for="nome">Nome:</label>
       <input type="text" id="nome" name="nome" required><br><br>
@@ -29,16 +32,19 @@
       <textarea id="mensagem" name="mensagem" required></textarea><br><br>
       <input type="submit" value="Enviar">
     </form>
+    <!-- adiciona links, links com imagem e link sdetitulo-->
     <a href="https://www.google.com">Google</a>
     <a href="https://www.google.com"><img src="C:\Users\Guilh\OneDrive\Desktop\WebDesign\Exercício 4\Imagens\imagem1.jpeg" alt="Google"></a>
     <a href="https://www.google.com"><h1>titulo de link</h1></a>
 
     <ol>
+      <!--Lista ordenada-->
       <li>Passo 1</li>
       <li>Passo 2</li>
       <li>Passo 3</li>
     </ol>
       <ul>
+        <!-- lista não ordenada -->
         <li>Item A</li>
         <li>Item B</li>
         <li>Item C</li>
@@ -65,13 +71,19 @@
         </tr>
       </tbody>
     </table>
+    <!--Paragrafo com id e class estilizados em css-->
     <p id="introdução">Texto introdutório.</p>
     <p class="destaque">Este é um parágrafo com a classe "Destaque".</p>
     <p class="destaque">Este é um parágrafo com a classe "Destaque".</p>
+    <!-- um nova divisão com um id personalizado-->
     <div id="container">
       <h3>Subtítulo</h3>
       <p>Este é um parágrafo dentro de uma div.</p>
+      <p>Este é outro parágrafo dentro da mesma div.</p>
     </div>
   </main>
+  <!--Código todo comentado como solicitado no exercicio 11-->
 </body>
+<footer>
+  <p>Rodapé do site</p>
 </html>
