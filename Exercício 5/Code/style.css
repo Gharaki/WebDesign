@@ -5,3 +5,10 @@
     margin: 20px;
     border-radius: 15px;
 }
+#Guilherme p{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.sublinhado{
+    text-decoration: underline;
+}
