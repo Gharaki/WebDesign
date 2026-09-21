@@ -12,3 +12,14 @@
 .sublinhado{
     text-decoration: underline;
 }
+#Rafael{
+    background-color: #b90606bf;
+    color : #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#Rafael p{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
