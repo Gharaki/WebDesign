@@ -16,7 +16,7 @@
 
     }
 #Rafael{
-    background-color: #b90606;
+    background-color: #7700ff;
     color : #fff;
     padding: 30px;
     margin: 20px;
@@ -26,7 +26,18 @@
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+#Pedro{
+    background-color: #ff5500f0;
+    color : #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+#Pedro p{
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 
+    }
 .sublinhado{
     text-decoration: underline;
 }
