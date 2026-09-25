@@ -1,61 +1,65 @@
-#menu{
+.menu {
     text-align: right;
-    color:black;
+    color: black;
     text-decoration: none;
 }
-#Guilherme{
+
+#Guilherme {
     background-color: #06385e;
-    color : #fff;
+    color: #fff;
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
 }
-#Guilherme p{
+
+#Guilherme p {
     font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
-    }
-#Rafael{
+#Rafael {
     background-color: #7700ff;
-    color : #fff;
+    color: #fff;
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
 }
-#Rafael p{
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-#Pedro{
-    background-color: #ff5500f0;
-    color : #fff;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 15px;
-}
-#Pedro p{
-    font-size: 15px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 
-    }
-.sublinhado{
+#Rafael p {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#Pedro {
+    background-color: #ff5500f0;
+    color: #fff;
+    padding: 30px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+#Pedro p {
+    font-size: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.sublinhado {
     text-decoration: underline;
 }
 
-#favoritos {
+.favoritos {
     text-align: center;
-   
     width: 80%;
     margin: auto;
 }
 
-#favoritos th,
-#favoritos td {
+.favoritos th,
+.favoritos td {
     border: 1px solid black;
     padding: 10px;
 }
 
-#favoritos th {
+.favoritos th {
     background-color: #333;
     color: white;
 }
