@@ -58,7 +58,12 @@ input,select,textarea{width:100%;margin-top:6px;padding:13px 14px;border:1px sol
 input:focus,select:focus,textarea:focus{outline:2px solid var(--teal);border-color:var(--teal)}
 form button{padding:16px;background:var(--navy);color:#fff;border:0;font:inherit;font-weight:400;cursor:pointer;transition:background .2s}
 form button:hover{background:var(--teal)}
-#ok{display:none;padding:14px;background:#e6f3ef;color:#1d5b4b}
+#ok{
+    display:none;
+    padding:14px;
+    background:#e6f3ef;
+    color:#1d5b4b
+}
 #ok.show{display:block}
 
 footer{background:var(--mist);text-align:center;padding:28px 5vw;font-size:.8rem;color:#5b7080}
