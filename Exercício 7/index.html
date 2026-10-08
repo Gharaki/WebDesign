@@ -23,15 +23,39 @@
         <h1>Bem-vindo à Clínica Médica</h1>
         <p>Oferecemos cuidados de saúde de qualidade para você e sua família.</p>
     </div>
-    <div id="especialidades">
-        <h2>Especialidades</h2>
-        <ul>
-            <li>Cardiologia</li>
-            <li>Dermatologia</li>
-            <li>Ginecologia</li>
-            <li>Pediatria</li>
-            <li>Ortopedia</li>
-        </ul>
+    <section id="especialidades">
+  <div class="wrap">
+    <h2>Especialidades</h2>
+    <p class="intro">Escolha a área e agende com um de nossos especialistas.</p>
+    <div class="spec-list">
+      <div>
+        <h3>Cardiologia</h3>
+        <p>Check-up cardiológico, hipertensão, arritmias, eletrocardiograma e ecocardiograma.</p>
+        <a href="#contato">Agendar</a>
+      </div>
+      <div>
+        <h3>Dermatologia</h3>
+        <p>Avaliação de pele, acne, manchas, queda de cabelo e mapeamento de pintas.</p>
+        <a href="#contato">Agendar</a>
+      </div>
+      <div>
+        <h3>Ortopedia</h3>
+        <p>Dores articulares, lesões esportivas, coluna e reabilitação.</p>
+        <a href="#contato">Agendar</a>
+      </div>
+      <div>
+        <h3>Pediatria</h3>
+        <p>Acompanhamento do crescimento, vacinas e cuidados da infância à adolescência.</p>
+        <a href="#contato">Agendar</a>
+      </div>
+      <div>
+        <h3>Clínica geral</h3>
+        <p>Primeira avaliação, exames de rotina e encaminhamento para o especialista certo.</p>
+        <a href="#contato">Agendar</a>
+      </div>
+    </div>
+  </div>
+</section>
     </div>
     <div id="equipe">
         <h2>Equipe</h2>
@@ -43,11 +67,20 @@
         <h2>Agendamento</h2>
         <p>Para agendar uma consulta, entre em contato conosco pelo telefone ou preencha o formulário online.</p>
     </div>
-    <div id="contato">
+    <section id="contato">
         <h2>Contato</h2>
         <p>Telefone: (11) 1234-5678</p>
         <p>Email: contato@clinica.com</p>
-    </div>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
     <footer id="footer">
         <p>© 2026 Clínica Médica. Todos os direitos reservados. FACENS Web Design</p>
     </footer>
