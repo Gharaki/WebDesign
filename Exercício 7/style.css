@@ -1,3 +1,18 @@
 nav{
-    
+    width: 90%; /* aproximadamente 90% da tela*/
+    height: 50px; /*tera uma altura de 50 pixels dentro dos 90% de tela*/
+    padding: 10px; /* o padding é a distancia entre a borda e o conteudo*/
+    border: 2px solid black; /* borda que fica em volta de todo o conteudo do nav*/
+    margin: 20px auto;/* o margin é a distancia entre o nav e os outros elementos da pagina, o auto centraliza o nav*/
+    text-align: center; /* o text-align centraliza o conteudo do nav*/
+    background-color: #a12d2d;
 }
+#home {
+    width: 100%;
+    Height: 500px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+}
+ 
