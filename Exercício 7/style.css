@@ -1,26 +1,93 @@
-h1,h2,h3{
-    color: #12324a;
+/*  ========================================
+    CONFIGURAÇÃOES GERAIS DO SITE
+    ========================================*/
+* {
+    box-sizing: border-box; /*garante que o padding e a borda não aumentem o tamanho do elemento*/
+    margin: 0; /*remove a margem padrão do navegador*/
+    padding: 0; /*remove o padding padrão do navegador*/
+
 }
+h1,h2,h3{
+    color: #12324a; /*cor geral do site*/
+}
+
 h2{
     text-align: center;
     margin-bottom: 20px;
 }
 
-
-#header {
-    position: sticky; /*mantem a posição fixa*/
-    top: 0;/*condição de até onde vai ficar fxa*/
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    padding: 18px 5vw;
-    gap: 24px;
+p{
+    margin-bottom: 16px;
 }
 
 a {
     color: inherit; /*herda a cor do elemento master*/
     text-decoration: none; /*remove o sublinhado do link*/
 }
+
+/*  ========================================
+    CABEÇALHO
+    ========================================*/
+
+#header {
+    position: sticky; /*mantem a posição fixa*/
+    top: 0;/*condição de até onde vai ficar fxa*/
+    z-index: 10; /*garante que o header fique acima de outros elementos*/
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 18px 5vw;
+    gap: 24px;
+    background-color: #12324a;
+    color: white;
+}
+
+nav a{
+    color: white;
+    padding: 8px;
+}
+
+nav a:hover{
+    /*hover é a ação de passar o mouse por cima do elemento*/
+    color: #8ed9e5;
+}
+
+/*  ========================================
+    PÁGINA INICIAL
+    ========================================*/
+
+#home {
+    height: 300px;
+    padding: 60px;
+    margin: 20px;
+    text-align: center;
+    border: 1px solid #dbe4e2;
+    background-color: white;
+}
+
+#home h1{
+    font-size:30px;
+}
+
+#home p{
+    max-width: 700px;
+    margin: 20px auto;
+}
+
+#home a{
+    display: inline-block;
+    padding: 12px 24px;
+    margin-top: 10px;
+    background-color: #2f8fa3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+#home a:hover{
+    background-color: #12324a;
+}
+
 nav{
     display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
     width: 90%; /* aproximadamente 90% da tela*/
@@ -30,13 +97,7 @@ nav{
     margin: 20px auto;/* o margin é a distancia entre o nav e os outros elementos da pagina, o auto centraliza o nav*/
     text-align: center; /* o text-align centraliza o conteudo do nav*/
 }
-#home {
-    height: 200px;
-    padding: 20px;
-    border: 2px solid black;
-    margin: 20px;
-    text-align: center;
-}
+
 
 #footer {
     text-align: center;
