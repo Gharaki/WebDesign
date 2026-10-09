@@ -1,0 +1,38 @@
+#header {
+    position: sticky; /*mantem a posição fixa*/
+    top: 0;/*condição de até onde vai ficar fxa*/
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 5vw;
+    gap: 24px;
+    background-color: rgb(124, 103, 103);
+}
+
+a {
+    color: inherit; /*herda a cor do elemento master*/
+    text-decoration: none; /*remove o sublinhado do link*/
+}
+nav{
+    display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
+    width: 90%; /* aproximadamente 90% da tela*/
+    height: 50px; /*tera uma altura de 50 pixels dentro dos 90% de tela*/
+    padding: 10px; /* o padding é a distancia entre a borda e o conteudo*/
+    border: 2px solid black; /* borda que fica em volta de todo o conteudo do nav*/
+    margin: 20px auto;/* o margin é a distancia entre o nav e os outros elementos da pagina, o auto centraliza o nav*/
+    text-align: center; /* o text-align centraliza o conteudo do nav*/
+}
+#home {
+    Height: 200px;
+    padding: 20px;
+    border: 2px solid black;
+    margin: 20px;
+    text-align: center;
+}
+
+#footer {
+    text-align: center;
+    padding: 28px 5vw;
+    font-size: .8rem;
+    color: #5b7080;
+}

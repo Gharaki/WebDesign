@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Clínica Vitale | Consultas de especialidades</title>
+<meta name="description" content="Consultas com especialistas em cardiologia, dermatologia, ortopedia, pediatria e mais. Agende online.">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&family=Space+Grotesk:wght@400;500;700&family=Cormorant+Garamond:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <a href="#inicio" class="logo" aria-label="Clínica Vitale">
+    <svg class="logo-icon" viewBox="0 0 46 42" aria-hidden="true"><path d="M23 38C10 29 4 22 4 14a10 10 0 0 1 19-4 10 10 0 0 1 19 4c0 8-6 15-19 24z"/><path class="thin" d="M12 22h6l3-6 4 10 3-4h6"/></svg>
+    <span><b>Clínica Vitale</b><small>Especialidades médicas</small></span>
+  </a>
+  <button class="menu-btn" aria-label="Abrir menu" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+  <nav>
+    <a href="#inicio">Página inicial</a>
+    <a href="#especialidades">Especialidades</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </nav>
+</header>
+
+<main>
+<div class="hero" id="inicio">
+  <svg class="bg" viewBox="0 0 1200 600" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+    <g class="rings">
+      <circle cx="600" cy="300" r="120"/><circle cx="600" cy="300" r="200"/><circle cx="600" cy="300" r="290"/><circle cx="600" cy="300" r="390"/><circle cx="600" cy="300" r="500"/>
+    </g>
+    <path class="ecg" d="M0 300H380l30-70 40 150 45-220 50 200 30-60H1200"/>
+  </svg>
+  <div class="hero-in">
+    <h1>Clínica Vitale</h1>
+    <p class="sub">Consultas de especialidades</p>
+    <p class="lead">Cardiologia, dermatologia, ortopedia, pediatria e outras áreas em um só lugar, com atendimento no seu tempo.</p>
+    <a class="btn" href="#contato">Marque uma Consulta</a>
+  </div>
+</div>
+
+<section id="especialidades">
+  <div class="wrap">
+    <h2>Especialidades</h2>
+    <p class="intro">Escolha a área e agende com um de nossos especialistas.</p>
+    <div class="spec-list">
+      <div class="spec">
+        <svg viewBox="0 0 40 40"><path d="M20 35C9 27 5 21 5 15a8 8 0 0 1 15-3 8 8 0 0 1 15 3c0 6-4 12-15 20z"/></svg>
+        <h3>Cardiologia</h3>
+        <p>Check-up cardiológico, hipertensão, arritmias, eletrocardiograma e ecocardiograma.</p>
+        <a href="#contato" data-esp="Cardiologia">Agendar</a>
+      </div>
+      <div class="spec">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="14"/><path d="M14 24c2 4 10 4 12 0M15 16h.1M25 16h.1"/></svg>
+        <h3>Dermatologia</h3>
+        <p>Avaliação de pele, acne, manchas, queda de cabelo e mapeamento de pintas.</p>
+        <a href="#contato" data-esp="Dermatologia">Agendar</a>
+      </div>
+      <div class="spec">
+        <svg viewBox="0 0 40 40"><path d="M12 6v10a8 8 0 0 0 16 0V6M20 24v6a5 5 0 0 0 10 0v-3"/></svg>
+        <h3>Ortopedia</h3>
+        <p>Dores articulares, lesões esportivas, coluna e reabilitação.</p>
+        <a href="#contato" data-esp="Ortopedia">Agendar</a>
+      </div>
+      <div class="spec">
+        <svg viewBox="0 0 40 40"><circle cx="20" cy="13" r="6"/><path d="M8 34c0-8 5-12 12-12s12 4 12 12"/></svg>
+        <h3>Pediatria</h3>
+        <p>Acompanhamento do crescimento, vacinas e cuidados da infância à adolescência.</p>
+        <a href="#contato" data-esp="Pediatria">Agendar</a>
+      </div>
+      <div class="spec">
+        <svg viewBox="0 0 40 40"><path d="M6 20h6l4-9 6 18 4-9h8"/></svg>
+        <h3>Clínica geral</h3>
+        <p>Primeira avaliação, exames de rotina e encaminhamento para o especialista certo.</p>
+        <a href="#contato" data-esp="Clínica geral">Agendar</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="about" id="sobre">
+  <div class="wrap about-grid">
+    <div>
+      <h2>Sobre a clínica</h2>
+      <p>A Clínica Vitale reúne médicos de diferentes especialidades para que você resolva tudo no mesmo endereço. Cada consulta tem tempo para ouvir, examinar e explicar o tratamento com clareza.</p>
+      <p>Trabalhamos com prevenção e acompanhamento contínuo, com prontuário integrado entre os especialistas.</p>
+    </div>
+    <ul class="facts">
+      <li><strong>12 anos</strong>de atendimento</li>
+      <li><strong>5 especialidades</strong>no mesmo local</li>
+      <li><strong>Retorno em até 30 dias</strong>sem custo adicional</li>
+    </ul>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap">
+    <h2>Marque uma consulta</h2>
+    <p class="intro">Preencha o formulário e nossa equipe confirma o horário pelo WhatsApp.</p>
+    <div class="contact-grid">
+      <div class="info">
+        <p><strong>Endereço</strong>Rua Exemplo, 123, Centro<br>Sua cidade, SP</p>
+        <p><strong>Horário</strong>Segunda a sexta, 8h às 19h<br>Sábado, 8h às 12h</p>
+        <p><strong>Telefone e WhatsApp</strong>(00) 00000-0000</p>
+        <p><strong>E-mail</strong>contato@clinicavitale.com.br</p>
+      </div>
+      <form id="f">
+        <label>Nome completo<input required name="nome" autocomplete="name"></label>
+        <label>WhatsApp<input required name="tel" type="tel" autocomplete="tel"></label>
+        <label>Especialidade
+          <select id="esp" name="esp">
+            <option>Cardiologia</option><option>Dermatologia</option><option>Ortopedia</option><option>Pediatria</option><option>Clínica geral</option>
+          </select>
+        </label>
+        <label>Mensagem (opcional)<textarea name="msg" rows="3"></textarea></label>
+        <button type="submit">Solicitar agendamento</button>
+        <p id="ok" role="status">Pedido enviado. Entraremos em contato para confirmar o horário.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© 2026 Clínica Vitale. Responsável técnico: Dr. Nome Sobrenome, CRM 00000.</footer>
+
+<a class="chat" href="https://wa.me/5500000000000" aria-label="Falar pelo WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M21 12a8 8 0 0 1-11.5 7.2L4 20l1-4.6A8 8 0 1 1 21 12z"/><path d="M9 12h.01M12 12h.01M15 12h.01"/></svg>
+</a>
+
+<script>
+document.querySelectorAll('[data-esp]').forEach(a=>a.addEventListener('click',()=>{document.getElementById('esp').value=a.dataset.esp}));
+document.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',()=>document.querySelector('nav').classList.remove('open')));
+document.getElementById('f').addEventListener('submit',e=>{
+  e.preventDefault();
+  // Troque por envio real (WhatsApp, e-mail ou back-end)
+  document.getElementById('ok').classList.add('show');
+  e.target.reset();
+});
+</script>
+</body>
+</html>
