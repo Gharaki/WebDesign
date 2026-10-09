@@ -138,6 +138,47 @@ nav a:hover{
     margin-left:  auto;
     margin-right: auto;
 }
+
+/*  ========================================
+    especialidades 
+    ========================================*/
+#especialidades{
+    padding: 50px 5%;
+}
+#especialidades .intro{
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+#especialidades > div{
+    padding: 25px;
+}
+#especialidades > div > div{
+    padding: 25px;
+    margin: 15px 0;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 8px;
+}
+
+#especialidades h3{
+    margin-top: 0px;
+}
+
+#especialidades a{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2f8fa3;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#especialidades a:hover{
+    background-color: #12324a;
+}
+
+
 nav{
     display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
     width: 90%; /* aproximadamente 90% da tela*/
