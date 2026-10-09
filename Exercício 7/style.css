@@ -23,7 +23,7 @@ nav{
     text-align: center; /* o text-align centraliza o conteudo do nav*/
 }
 #home {
-    Height: 200px;
+    height: 200px;
     padding: 20px;
     border: 2px solid black;
     margin: 20px;
