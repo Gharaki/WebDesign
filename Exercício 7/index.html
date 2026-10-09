@@ -151,54 +151,192 @@
         <h2>Agende sua consulta</h2>
         <p>Preencha os campos abaixo para informar seus dados e sua preferência de atendimento.</p>
         <form>
-
+          <fieldset> <!-- agrupa os campos do formuario-->
+            <legend>Dados Pessoais</legend> <!--usado para criar um título ou legenda para o conteúdo agrupado dentro de um elemento fieldset-->
+            <div class="campo">
+              <label for="nome">Nome Completo:</label>
+              <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="campo">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+            </div>
+            <div class="campo">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="campo">
+              <label for="nascimento">Data de nascimento:</label>
+              <input type="date" id="nascimento" name="nascimento">
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend> Dados da consulta</legend>
+            <div class="campo">
+              <label for="especialidade">Especialidade:</label>
+              <select id="especialidade" name="especialidade" required>
+                <option value="">Selecione</option>
+                <option value="cardiologia">Cardiologia</option>
+                <option value="dermatologia">Dermatologia</option>
+                <option value="ortopedia">Ortopedia</option>
+                <option value="pediatria">Pediatria</option>
+                <option value="clinica-geral">Clínica Geral</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="data">Data da consulta:</label>
+              <input type="date" id="data-consulta" name="data-consulta" required>
+            </div>
+            <div class="campo">
+              <label for="periodo">Período:</label>
+              <select id="periodo" name="periodo" required>
+                <option value="">Selecione</option>
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="convenio">Convênio:</label>
+              <select id="convenio" name="convenio" required>
+                <option value="">Selecione</option>
+                <option value="amil">Amil</option>
+                <option value="unimed">Unimed</option>
+                <option value="green-line">Green Line</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="observacoes">Observações:</label>
+              <textarea id="observacoes" name="observacoes" rows="5" placeholder="Escreva informações adicionais, se necessário."></textarea>
+            </div>
+          </fieldset>
+          <div class="campo">
+            <label for="consentimento">
+              <input type="checkbox" id="consentimento" name="consentimento" required>
+              Autorizo o contato para tratar da solicitação de agendamento.
+            </label>
+          </div>
+          <button type="submit">Solicitar Agendamento</button>
         </form>
     </div>
+    <section class="convenios">
+      <h2>Convênios aceitos</h2>
+      <p> Consulte a disponibilidade de atendimento para seu convênio antes de agendar. </p>
+      <div class="convenios-lista">
 
 
+                    <!--  ADICIONAR IMAGEENS DOS CONVENIOS E VINCULAR -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-      <section id="contato">
-        <h2>Contato</h2>
-        <p>Telefone: (11) 1234-5678</p>
-        <p>Email: contato@clinica.com</p>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="convenio">
+          <img src="TESTE.PNG" alt="Logo do convênio Amil">
+          <p>convenio 1</p>
+        </div>
+        <div class="convenio">
+          <img src="TESTE.PNG" alt="Logo do convênio Unimed">
+          <p>convenio 2</p>
+        </div>
+        <div class="convenio">
+          <img src="TESTE.PNG" alt="Logo do convênio Green Line">
+          <p>convenio 3</p>
+        </div>
+      </div>
+      <p> Entre em contato para confirmar os convênios disponíveis e as condições de atendimento. </p>
     </section>
+    <section id="depoimentos">
+      <h2>Depoimentos</h2>
+      <p>Veja o que nossos pacientes têm a dizer sobre a experiência na nossa clínica.</p>
+      <div class="depoimentos-lista">
+        <article class="depoimento">
+          <p>"Excelente atendimento! Me senti acolhido e bem cuidado durante toda a consulta."</p>
+          <p>- João da Silva</p>
+        </article>
+        <article class="depoimento">
+          <p>"Profissionais competentes e atenciosos. Recomendo a clínica para todos!"</p>
+          <p>- Maria Oliveira</p>
+        </article>
+        <article class="depoimento">
+          <p>"Estrutura moderna e equipe dedicada. Minha experiência foi muito positiva."</p>
+          <p>- Carlos Pereira</p>
+        </article>
+      </div>
+    </section>
+    <section id="faq">
+      <h2>Perguntas frequentes</h2>
+      <p>Confira algumas dúvidas comuns sobre nossos serviços. </p>
+      <details>
+        <!--details é possivel esconder o conteudo sem usar javascript-->
+        <summary>Como faço para agendar uma consulta?</summary>
+        <p> Você pode preencher o formulário de agendamento ou entrar em contato com a clínica pelos canais disponíveis. </p>
+      </details>
+      <details>
+        <summary>Como posso confirmar minha consulta?</summary>
+        <p> Após solicitar o agendamento, aguarde o contato da clínica para confirmar a disponibilidade. </p>
+      </details>
+      <details>
+        <summary>Quais especialidades estão disponíveis?</summary>
+        <p> Consulte a seção de especialidades para conhecer as áreas de atendimento. </p>
+      </details>
+      <details>
+        <summary>A clínica atende por convênio?</summary>
+        <p> Consulte a seção de convênios ou entre em contato para confirmar as opções disponíveis. </p>
+      </details>
+      <details>
+        <summary>Como posso cancelar uma consulta?</summary>
+        <p>Entre em contato com a clínica para solicitar o cancelamento ou verificar as orientações aplicáveis. </p>
+      </details>
+    </section>
+      <section id="contato">
+        <h2>Entre em Contato</h2>
+        <p>Estamos disponíveis para esclarecer dúvidas sobre nossos serviços e solicitações de agendamento. </p>
+        <div class="info-contato">
+          <div class="item-contato">
+            <h3>Telefone</h3>
+            <p>(11) 1234-5678</p>
+          </div>
+          <div class="item-contato">
+            <h3>Endereço</h3>
+            <address> Rua Exemplo, 123 <br> Centro <br> São Paulo - SP </address>
+          </div>
+          <div class="item-contato">
+            <h3>Email</h3>
+            <p>contato@clinica.com</p>
+          </div>
+          <div class="item-contato">
+            <h3>Horário de atendimento</h3>
+            <p>Segunda a sexta-feira</p>
+            <p>08h às 18h</p>
+            <p>Sábado: 08h às 12h</p>
+          </div>
+        </div>
     </main>
 
     <footer id="footer">
-        <p>© 2026 Clínica Médica. Todos os direitos reservados. FACENS Web Design</p>
+      <div class="footer-conteudo">
+        <div class="footer-clinica">
+          <h3>Clínica Médica</h3>
+          <p>Atendimento humanizado e profissionais qualificados para cuidar da sua saúde.</p>
+        </div>
+        <div class="footer-links"> <h3>Links rápidos</h3>
+          <a href="#home">Home</a>
+          <a href="#sobre">Sobre nós</a>
+          <a href="#especialidades">Especialidades</a>
+          <a href="#equipe">Equipe</a>
+          <a href="#agendamento">Agendamento</a>
+        </div>
+        <div class="footer-contato">
+          <h3>Contato</h3>
+          <p>Telefone: (11) 1234-5678</p>
+          <p>Email: contato@clinica.com</p>
+        </div>
+        <div class="footer-redes-sociais">
+          <h3>Siga-nos</h3>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+      <div class="footer-direitos">
+        <p>© 2026 Clínica Médica. Todos os direitos reservados.<br> FACENS Web Design</p>
     </footer>
 </body>
 
