@@ -88,6 +88,42 @@ nav a:hover{
     background-color: #12324a;
 }
 
+/*  ========================================
+    epcialidades
+    ========================================*/
+#diferenciais{
+    padding: 50px 5%;  
+    text-align: center;
+}
+.lista-diferenciais{
+    display: flex;
+    justify-content: center; 
+    gap: 20px;
+    flex-wrap: wrap; 
+    gap: 30px; 
+}
+
+.diferencial{
+    flex: 1 ; /*o flex grow é utilizado para que os elementos cresçam de acordo com o tamanho da tela*/
+    min-width: 220px;
+    max-width: 300px;
+    padding: 25px;
+    border: 1px solid #dbe4e2;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.diferencial h3{
+    margin-top: 0px;
+}
+
+/*  ========================================
+    sobre a clinica
+    ========================================*/
+#sobre{
+    padding: 50px 5%;
+    background-color: #f5f5f5;
+}
 nav{
     display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
     width: 90%; /* aproximadamente 90% da tela*/
