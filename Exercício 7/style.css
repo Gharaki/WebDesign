@@ -124,6 +124,20 @@ nav a:hover{
     padding: 50px 5%;
     background-color: #e9f0f2;
 }
+#sobre h2{
+    text-align: center;
+}
+
+#sobre h3{
+    margin-top: 25px;
+    margin-bottom: 8px;
+}
+
+#sobre p{
+    max-width: 900px;
+    margin-left:  auto;
+    margin-right: auto;
+}
 nav{
     display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
     width: 90%; /* aproximadamente 90% da tela*/
