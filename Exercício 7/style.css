@@ -178,7 +178,34 @@ nav a:hover{
     background-color: #12324a;
 }
 
+/*  ========================================
+    Equipe médica 
+    ========================================*/
 
+#equipe{
+    padding: 50px 5%;
+    text-align: center;
+    background-color: #e9f0f2;
+}
+.medico{
+    display:inline-block;
+    vertical-align: top;
+    width: 280px;
+    padding: 20px;
+    margin: 15px;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 8px;
+}
+
+medico h3{
+    margin-top: 15px;
+}
+
+.medico .cargo{
+    color: #2f8fa3;
+    font-weight: bold;
+}
 nav{
     display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
     width: 90%; /* aproximadamente 90% da tela*/
