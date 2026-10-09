@@ -1,3 +1,12 @@
+h1,h2,h3{
+    color: #12324a;
+}
+h2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
 #header {
     position: sticky; /*mantem a posição fixa*/
     top: 0;/*condição de até onde vai ficar fxa*/
@@ -6,7 +15,6 @@
     justify-content: space-between;
     padding: 18px 5vw;
     gap: 24px;
-    background-color: rgb(124, 103, 103);
 }
 
 a {
