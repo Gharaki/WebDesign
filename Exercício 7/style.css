@@ -198,7 +198,7 @@ nav a:hover{
     border-radius: 8px;
 }
 
-medico h3{
+.medico h3{
     margin-top: 15px;
 }
 
@@ -206,20 +206,250 @@ medico h3{
     color: #2f8fa3;
     font-weight: bold;
 }
-nav{
-    display: flex; /*o display flex é utilizado para alinhar os elementos dentro do nav*/
-    width: 90%; /* aproximadamente 90% da tela*/
-    height: 50px; /*tera uma altura de 50 pixels dentro dos 90% de tela*/
-    padding: 10px; /* o padding é a distancia entre a borda e o conteudo*/
-    border: 2px solid black; /* borda que fica em volta de todo o conteudo do nav*/
-    margin: 20px auto;/* o margin é a distancia entre o nav e os outros elementos da pagina, o auto centraliza o nav*/
-    text-align: center; /* o text-align centraliza o conteudo do nav*/
+
+/*  ========================================
+    agendamento
+    ========================================*/
+
+#agendamento{
+    padding: 50px 8%;
+}
+
+#agendamento >p{
+    text-align: center;
+}
+
+form{
+    max-width: 750px;
+    margin: 30px auto;
+}
+
+fieldset{
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #b8c9ce;
+    border-radius: 8px;
+    background-color: white;
+}
+
+legend{
+    padding: 0 10px;
+    color: #12324a;
+    font-weight: bold;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.campo input, .campo select, .campo textarea {
+    width: 100%; padding: 12px;
+    border: 1px solid #b8c9ce;
+    border-radius: 5px;
+    font-family: Arial, sans-serif;
+    font-size: 16px; }
+.campo input:focus, .campo select:focus, .campo textarea:focus{
+    outline: 2px solid #2f8fa3;
+} 
+.campo input[type="checkbox"]{
+    width: auto;
+}
+#agendamento button{
+    padding: 14px 25px; border: none;
+    border-radius: 5px; background-color: #2f8fa3;
+    color: white;
+    font-size: 16px; cursor: pointer;
+}
+#agendamento button:hover{
+    background-color: #12324a;
+}
+
+/*  ========================================
+    Convenios
+    ========================================*/
+.convenios{
+    padding: 50px 5%;
+    text-align: center;
+    background-color: #e9f0f2;;
+}
+
+.convenios-lista{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; gap: 25px;
+    margin: 30px 0;
+} 
+.convenio{
+    width: 180px;
+    padding: 20px;
+    border: 1px solid #dbe4e2;
+    border-radius: 8px;
+}
+
+.convenio img{
+    width: 100%;
+    height: 80px; object-fit: contain;
+}
+
+.convenio p{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/*  ========================================
+    Depoimentos
+    ========================================*/
+
+#depoimentos{
+    padding: 50px 5%;
+}.
+
+.depoimentos-lista{display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.depoimento{
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #2f8fa3;
+    border-radius: 5px;
+}
+
+.depoimento p:last-child{
+    color: #64747c;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+/*  ========================================
+    FAQ
+    ========================================*/
+#faq{
+    padding: 50px 8%;
+    background-color: #e9f0f2;
+}
+
+#faq details{
+    max-width: 850px;
+    margin: 15px auto;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 5px;
+}
+
+#faq summary{
+    color: #12324a;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+#faq details p{
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+/*  ========================================
+    contato
+    ========================================*/
+
+#contato{
+    padding: 50px 5%;
+}
+
+.info-contato{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.item-contato{
+    flex: 1;
+    min-width: 200px; 
+    padding: 20px;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 8px;
+}
+
+.item-contato h3{
+    margin-top: 0;
+}
+
+address{
+    font-style: normal;
+}
+
+#contato form{
+    padding: 25px; 
+    background-color: white;
+    border: 1px solid #dbe4e2;border-radius: 8px;
+}
+
+#contato button{
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2f8fa3;
+    color: white;
+    cursor: pointer;
+}
+
+#contato button:hover{
+    background-color: #12324a;
 }
 
 
-#footer {
+#footer{
+    padding: 40px 5%;
+    background-color: #12324a;
+    color: white;
+}
+
+#footer h3{
+    color: white;
+}
+
+.footer-conteudo{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px; 
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-clinica, .footer-links, .footer-contato, .footer-redes-sociais{
+    flex: 1;
+    min-width: 180px;
+}
+
+.footer-links a, .footer-redes-sociais a{
+    display: block;
+    margin-bottom:
+    8px; color: white;
+}
+
+.footer-links a:hover, .footer-redes-sociais a:hover{
+    color: #8ed9e5;
+}
+
+.footer-direitos{
     text-align: center;
-    padding: 28px 5vw;
-    font-size: .8rem;
-    color: #5b7080;
+    padding-top: 25px;
+    margin-top: 30px;
+    border-top: 1px solid #526a7b;
+    font-size: 14px;
 }
