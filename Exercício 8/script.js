@@ -49,6 +49,31 @@ dataConsulta.addEventListener("change", function () {
     dataConsulta.setCustomValidity("");
 });
 
+// Aplica máscara ao telefone enquanto o usuário digita.
+const telefone = document.getElementById("telefone");
+
+telefone.addEventListener("input", function () {
+    let numeros = telefone.value.replace(/\D/g, "").slice(0, 11);
+
+    if (numeros.length > 10) {
+        telefone.value = numeros.replace(
+            /^(\d{2})(\d{5})(\d{0,4}).*/,
+            "($1) $2-$3"
+        );
+    } else if (numeros.length > 6) {
+        telefone.value = numeros.replace(
+            /^(\d{2})(\d{4})(\d{0,4}).*/,
+            "($1) $2-$3"
+        );
+    } else if (numeros.length > 2) {
+        telefone.value = numeros.replace(
+            /^(\d{2})(\d{0,5})/,
+            "($1) $2"
+        );
+    } else if (numeros.length > 0) {
+        telefone.value = `(${numeros}`;
+    }
+});
 
 
 
