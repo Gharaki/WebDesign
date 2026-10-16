@@ -292,15 +292,16 @@ legend{
     border-radius: 8px;
 }
 
-.convenio img{
-    width: 100%;
-    height: 80px; object-fit: contain;
-}
-
 .convenio p{
     margin-top: 15px;
     margin-bottom: 0;
 }
+
+.img-convenio{
+    width: 20;
+    height: 20;
+}
+
 
 /*  ========================================
     Depoimentos
@@ -413,6 +414,9 @@ address{
     background-color: #12324a;
 }
 
+/*  ========================================
+    footer
+    ========================================*/
 
 #footer{
     padding: 40px 5%;
@@ -456,7 +460,30 @@ address{
     font-size: 14px;
 }
 
-.img-convenio{
-    width: 200;
-    height: auto;
+
+/*  ========================================
+    dicas de saude
+    ========================================*/
+
+#dicas-saude {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.dicas-lista {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.dica {
+    flex: 1;
+    min-width: 220px;
+    max-width: 350px;
+    padding: 25px;
+    background-color: white;
+    border-left: 4px solid #2f8fa3;
+    border-radius: 5px;
 }
