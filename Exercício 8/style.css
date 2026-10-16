@@ -455,3 +455,8 @@ address{
     border-top: 1px solid #526a7b;
     font-size: 14px;
 }
+
+.img-convenio{
+    width: 200;
+    height: auto;
+}
