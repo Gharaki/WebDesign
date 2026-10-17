@@ -75,7 +75,14 @@ telefone.addEventListener("input", function () {
     }
 });
 
+// Exibe uma confirmação após o envio do formulário (msg).
+const formularioAgendamento = document.querySelector("#agendamento form");
 
+formularioAgendamento.addEventListener("submit", function (evento) {
+    evento.preventDefault();
+
+    alert("Solicitação de agendamento enviada com sucesso!");
+});
 
 
 
