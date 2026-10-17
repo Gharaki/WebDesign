@@ -84,6 +84,27 @@ formularioAgendamento.addEventListener("submit", function (evento) {
     alert("Solicitação de agendamento enviada com sucesso!");
 });
 
+// exibe uma validação do email / consentimento. (msg)
+const emailAgendamento = document.getElementById("email");
+const consentimento = document.getElementById("consentimento");
+
+formularioAgendamento.addEventListener("submit", function (evento) {
+    if (!emailAgendamento.checkValidity()) {
+        evento.preventDefault();
+        emailAgendamento.reportValidity();
+        return;
+    }
+
+    if (!consentimento.checked) {
+        evento.preventDefault();
+        alert("Aceite o consentimento antes de continuar.");
+        consentimento.focus();
+        return;
+    }
+
+    evento.preventDefault();
+    alert("Solicitação de agendamento enviada com sucesso!");
+});
 
 
 
