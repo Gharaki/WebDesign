@@ -298,8 +298,10 @@ legend{
 }
 
 .img-convenio{
-    width: 20;
-    height: 20;
+    width: 100%;
+    height: 80px;
+    object-fit: contain;
+    display: block;
 }
 
 
