@@ -29,6 +29,19 @@ a {
     CABEÇALHO
     ========================================*/
 
+.logo{
+    display:flex;
+    align-items: center;
+    margin-right: auto;
+}
+
+.logo img{
+    width: 120px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
 #header {
     position: sticky; /*mantem a posição fixa*/
     top: 0;/*condição de até onde vai ficar fxa*/
