@@ -32,7 +32,6 @@ a {
 .logo{
     display:flex;
     align-items: center;
-    margin-right: auto;
 }
 
 .logo img{
@@ -48,11 +47,20 @@ a {
     z-index: 10; /*garante que o header fique acima de outros elementos*/
     align-items: center;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     padding: 18px 5vw;
     gap: 24px;
     background-color: #12324a;
     color: white;
+}
+
+#header nav {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 24px;
 }
 
 nav a{
