@@ -228,6 +228,15 @@ nav a:hover{
     font-weight: bold;
 }
 
+.medico-img {
+    
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    border-radius: 6px;
+}
+
 /*  ========================================
     agendamento
     ========================================*/
