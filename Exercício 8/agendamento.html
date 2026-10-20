@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento | Clínica Vitae</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header id="header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="imagens/Logo site.png" alt="Logo da Clínica Vitae">
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="especialidades.html">Especialidades</a>
+            <a href="equipe.html">Equipe</a>
+            <a href="agendamento.html">Agendamento</a>
+            <a href="convenios.html">Convênios</a>
+            <a href="contato.html">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="como-agendar">
+            <h1>Como agendar sua consulta</h1>
+            <p>Agendar sua consulta é simples. Siga as etapas abaixo para solicitar atendimento.</p>
+            <div class="etapas-agendamento">
+                <article class="etapa">
+                    <h2>1. Escolha a especialidade</h2>
+                    <p>Consulte as áreas de atendimento disponíveis e escolha a especialidade mais adequada.</p>
+                </article>
+                <article class="etapa">
+                    <h2>2. Preencha o formulário</h2>
+                    <p>Informe seus dados de contato e selecione a data de sua preferência.</p>
+                </article>
+                <article class="etapa">
+                    <h2>3. Aguarde a confirmação</h2>
+                    <p>A equipe da clínica entrará em contato para verificar a disponibilidade do horário.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="orientacoes-consulta">
+            <h2>Como se preparar para a consulta</h2>
+            <p>Algumas atitudes simples ajudam o paciente a aproveitar melhor o atendimento e facilitam a organização da equipe da clínica.</p>
+            <div class="etapas-agendamento">
+                <article class="etapa">
+                    <h3>1. Separe seus documentos</h3>
+                    <p>Tenha em mãos um documento de identificação e, quando necessário, a carteirinha do convênio utilizado.</p>
+                    <p>Esses documentos ajudam a equipe a conferir os dados do cadastro e a orientar o paciente durante a recepção.</p>
+                </article>
+                <article class="etapa">
+                    <h3>2. Organize exames anteriores</h3>
+                    <p>Se possuir exames relacionados ao motivo da consulta, organize-os para apresentá-los ao profissional de saúde.</p>
+                    <p>Levar informações anteriores pode ajudar o profissional a compreender melhor o histórico do atendimento.</p>
+                </article>
+                <article class="etapa">
+                    <h3>3. Anote suas dúvidas</h3>
+                    <p>Registre os assuntos que deseja conversar durante a consulta, para não esquecer perguntas importantes.</p>
+                    <p>Converse com o profissional para receber orientações adequadas ao seu caso.</p>
+                </article>
+                <article class="etapa">
+                    <h3>4. Confira data e horário</h3>
+                    <p>Antes de sair de casa, confira a data, o período escolhido e as informações recebidas da equipe da clínica.</p>
+                    <p>Caso precise esclarecer alguma informação, utilize os canais de contato disponíveis.</p>
+                </article>
+            </div>
+            <p>Estas orientações são informativas e não substituem as instruções específicas fornecidas pela equipe de saúde.</p>
+        </section>
+
+        <section id="agendamento">
+            <h2>Solicite seu agendamento</h2>
+            <p>Preencha os campos abaixo para informar seus dados e sua preferência de atendimento.</p>
+            <form>
+                <fieldset>
+                    <legend>Dados pessoais</legend>
+                    <div class="campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome" required>
+                    </div>
+                    <div class="campo">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    <div class="campo">
+                        <label for="telefone">Telefone:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+                    </div>
+                    <div class="campo">
+                        <label for="nascimento">Data de nascimento:</label>
+                        <input type="date" id="nascimento" name="nascimento">
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Dados da consulta</legend>
+                    <div class="campo">
+                        <label for="especialidade">Especialidade:</label>
+                        <select id="especialidade" name="especialidade" required>
+                            <option value="">Selecione</option>
+                            <option value="cardiologia">Cardiologia</option>
+                            <option value="dermatologia">Dermatologia</option>
+                            <option value="ortopedia">Ortopedia</option>
+                            <option value="pediatria">Pediatria</option>
+                            <option value="clinica-geral">Clínica Geral</option>
+                            <option value="endocrinologia">Endocrinologia</option>
+                            <option value="neurologia">Neurologia</option>
+                            <option value="geriatria">Geriatria</option>
+                            <option value="infectologia">Infectologia</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="data-consulta">Data da consulta:</label>
+                        <input type="date" id="data-consulta" name="data-consulta" required>
+                    </div>
+                    <div class="campo">
+                        <label for="periodo">Período:</label>
+                        <select id="periodo" name="periodo" required>
+                            <option value="">Selecione</option>
+                            <option value="manha">Manhã</option>
+                            <option value="tarde">Tarde</option>
+                            <option value="noite">Noite</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="convenio">Convênio:</label>
+                        <select id="convenio" name="convenio" required>
+                            <option value="">Selecione</option>
+                            <option value="amil">Amil</option>
+                            <option value="unimed">Unimed</option>
+                            <option value="green-line">Green Line</option>
+                            <option value="facens">Facens</option>
+                            <option value="plena">Plena</option>
+                            <option value="bradesco-saude">Bradesco Saúde</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="observacoes">Observações:</label>
+                        <textarea id="observacoes" name="observacoes" rows="5" placeholder="Escreva informações adicionais, se necessário."></textarea>
+                    </div>
+                </fieldset>
+                <div class="campo">
+                    <label for="consentimento">
+                        <input type="checkbox" id="consentimento" name="consentimento" required>
+                        Autorizo o contato para tratar da solicitação de agendamento.
+                    </label>
+                </div>
+                <button type="submit">Solicitar agendamento</button>
+            </form>
+        </section>
+    </main>
+
+    <footer id="footer">
+        <div class="footer-conteudo">
+            <div class="footer-clinica">
+                <h3>Clínica Vitae</h3>
+                <p>Atendimento humanizado e profissionais qualificados para cuidar da sua saúde.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links rápidos</h3>
+                <a href="index.html">Home</a>
+                <a href="index.html#sobre">Sobre nós</a>
+                <a href="especialidades.html">Especialidades</a>
+                <a href="equipe.html">Equipe</a>
+                <a href="agendamento.html">Agendamento</a>
+                <a href="convenios.html">Convênios</a>
+                <a href="contato.html">Contato</a>
+            </div>
+            <div class="footer-contato">
+                <h3>Contato</h3>
+                <p>Telefone: (11) 1234-5678</p>
+                <p>Email: contato@clinica.com</p>
+            </div>
+            <div class="footer-redes-sociais">
+                <h3>Siga-nos</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">LinkedIn</a>
+            </div>
+        </div>
+        <div class="footer-direitos">
+            <p>© 2026 Clínica Vitae. Todos os direitos reservados.<br>FACENS Web Design</p>
+        </div>
+    </footer>
+</body>
+</html>

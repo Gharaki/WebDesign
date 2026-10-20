@@ -1,0 +1,15 @@
+CLÍNICA VITAE — PÁGINAS HTML SEPARADAS
+
+Arquivos HTML:
+- index.html
+- especialidades.html
+- equipe.html
+- agendamento.html
+- convenios.html
+- contato.html
+
+Os seis arquivos apontam para style.css e script.js na pasta principal. Copie os seus arquivos CSS e JS atuais para esta mesma pasta.
+
+A pasta imagens/ está criada, mas você precisa copiar para ela as imagens reais do seu projeto. Confira especialmente os nomes dos arquivos de logo e dos logos de convênios: os nomes usados no HTML devem corresponder exatamente aos arquivos que você possui.
+
+Observação: o formulário HTML ainda não envia agendamentos para um sistema. Para isso, será necessário backend ou um serviço de formulários.
