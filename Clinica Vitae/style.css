@@ -246,71 +246,240 @@ nav a:hover{
     margin-top: 10px;
 }
 
-#equipe a:hover{
+#especialidades a:hover{
     background-color: #12324a;
 }
 
-/*  ========================================
-    agendamento
-    ========================================*/
 
-#agendamento{
-    padding: 50px 8%;
-}
+/* ========================================
+   PÁGINA DE AGENDAMENTO - MODERNIZAÇÃO
+   ======================================== */
 
-#agendamento >p{
+/* Como agendar */
+#como-agendar {
+    padding: 60px 8%;
     text-align: center;
+    background-color: #e9f0f2;
 }
 
-form{
-    max-width: 750px;
-    margin: 30px auto;
+#como-agendar h1 {
+    font-size: 32px;
+    margin-bottom: 15px;
 }
 
-fieldset{
-    padding: 25px;
-    margin-bottom: 25px;
-    border: 1px solid #b8c9ce;
+#como-agendar > p {
+    max-width: 700px;
+    margin: 0 auto 35px;
+    color: #526a7b;
+}
+
+.etapas-agendamento {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto 0;
+}
+
+.etapa {
+    padding: 30px;
+    text-align: left;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(18, 50, 74, 0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.etapa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(18, 50, 74, 0.10);
+}
+
+.etapa h2,
+.etapa h3 {
+    text-align: left;
+    margin-bottom: 15px;
+    color: #12324a;
+}
+
+.etapa p:last-child {
+    margin-bottom: 0;
+}
+
+#orientacoes-consulta {
+    padding: 60px 8%;
+}
+
+#orientacoes-consulta > p {
+    max-width: 900px;
+    margin: 0 auto 25px;
+    text-align: center;
+    color: #526a7b;
+}
+
+#orientacoes-consulta .etapa {
+    border-top: 4px solid #2f8fa3;
+}
+
+/* Formulário */
+#agendamento {
+    padding: 60px 8%;
+    background-color: #e9f0f2;
+}
+
+#agendamento h2 {
+    font-size: 30px;
+}
+
+#agendamento > p {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #526a7b;
+}
+
+#agendamento form {
+    max-width: 900px;
+    margin: 40px auto 0;
+    padding: 35px;
+    background-color: white;
+    border: 1px solid #dbe4e2;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(18, 50, 74, 0.08);
+}
+
+#agendamento fieldset {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+    padding: 30px;
+    margin-bottom: 30px;
+    border: 1px solid #dbe4e2;
+    border-radius: 12px;
+    background-color: #fcfdfd;
+}
+
+#agendamento legend {
+    padding: 0 12px;
+    font-size: 18px;
+    color: #12324a;
+}
+
+#agendamento .campo {
+    margin-bottom: 0;
+    gap: 10px;
+}
+
+#agendamento .campo label {
+    font-weight: 600;
+    color: #12324a;
+}
+
+#agendamento .campo input,
+#agendamento .campo select,
+#agendamento .campo textarea {
+    padding: 14px;
+    border: 1px solid #cbd8dc;
     border-radius: 8px;
     background-color: white;
+    transition: border-color 0.2s, box-shadow 0.2s;
 }
 
-legend{
-    padding: 0 10px;
-    color: #12324a;
-    font-weight: bold;
+#agendamento .campo input:focus,
+#agendamento .campo select:focus,
+#agendamento .campo textarea:focus {
+    outline: none;
+    border-color: #2f8fa3;
+    box-shadow: 0 0 0 3px rgba(47, 143, 163, 0.12);
 }
 
-.campo{
+#agendamento textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+#agendamento fieldset:nth-of-type(2) .campo:last-child {
+    grid-column: 1 / -1;
+}
+
+/* Consentimento */
+#agendamento form > .campo {
+    margin: 10px 0 25px;
+}
+
+#agendamento form > .campo label {
     display: flex;
-    flex-direction: column;
-    gap: 8px;
-    margin-bottom: 20px;
+    align-items: flex-start;
+    gap: 12px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #526a7b;
 }
 
-.campo input, .campo select, .campo textarea {
-    width: 100%; padding: 12px;
-    border: 1px solid #b8c9ce;
-    border-radius: 5px;
-    font-family: Arial, sans-serif;
-    font-size: 16px; }
-.campo input:focus, .campo select:focus, .campo textarea:focus{
-    outline: 2px solid #2f8fa3;
-} 
-.campo input[type="checkbox"]{
-    width: auto;
+#agendamento input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    margin-top: 3px;
+    accent-color: #2f8fa3;
+    flex-shrink: 0;
 }
-#agendamento button{
-    padding: 14px 25px;
-    border: none;
-    border-radius: 5px;
+
+/* Botão */
+#agendamento button {
+    display: block;
+    width: 100%;
+    padding: 16px;
+    border-radius: 8px;
     background-color: #2f8fa3;
-    color: white;
-    font-size: 16px; cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s, transform 0.2s;
 }
-#agendamento button:hover{
+
+#agendamento button:hover {
     background-color: #12324a;
+    transform: translateY(-2px);
 }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #como-agendar,
+    #orientacoes-consulta,
+    #agendamento {
+        padding: 40px 5%;
+    }
+
+    #agendamento form {
+        padding: 20px;
+    }
+
+    #agendamento fieldset {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    #agendamento fieldset:nth-of-type(2) .campo:last-child {
+        grid-column: auto;
+    }
+
+    .etapa {
+        padding: 25px;
+    }
+
+    #como-agendar h1 {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    #agendamento form {
+        padding: 15px;
+    }
+
+    #agendamento fieldset {
+        padding: 15px;
+    }
+}
+
 
 /*  ========================================
     Convenios
