@@ -13,7 +13,6 @@ Desenvolver uma página web organizada, intuitiva e visualmente consistente, apl
 - **Página inicial:** apresentação da clínica e acesso ao agendamento.
 - **Diferenciais:** destaque das características e dos serviços oferecidos.
 - **Sobre a clínica:** apresentação da missão, visão e valores.
-- **Especialidades médicas:** informações sobre as áreas de atendimento.
 - **Equipe médica:** apresentação dos profissionais e suas especialidades.
 - **Agendamento:** formulário para preenchimento dos dados do paciente e da consulta.
 - **Convênios aceitos:** exibição dos convênios disponíveis.
@@ -29,20 +28,43 @@ Desenvolver uma página web organizada, intuitiva e visualmente consistente, apl
 - **CSS3:** estilização, cores, espaçamentos, alinhamentos e organização dos componentes.
 - **JavaScript:** arquivo preparado para futuras funcionalidades e melhorias interativas.
 
-## 📁 Estrutura do projeto
 
-```text
 Clinica-Vitae/
+├── agendamento.html
+├── contato.html
+├── convenios.html
+├── equipe.html
 ├── index.html
 ├── style.css
 ├── script.js
+│
 ├── Images/
-│   ├── Logo site.png
-│   └── imagens dos convênios
-└── imagens/
-    ├── imagens dos médicos
-    └── imagens da estrutura
-```
+│   ├── Estrutura/
+│   │
+│   ├── Logo/
+│   │   ├── Logo site.png
+│   │   └── Logo.png
+│   │
+│   ├── Planos/
+│   │   ├── amilpng.png
+│   │   ├── bradesco-saude-logo-png-seeklogo-484895.png
+│   │   ├── greenline-1.png
+│   │   ├── logo_hori_unifacens_azul.png
+│   │   ├── plena.png
+│   │   └── Unimed.png
+│   │
+│   └── Profissionais/
+│       ├── Dr.Carlos Almeida.png
+│       ├── Dr.Lucas.png
+│       ├── Dr.Marcelo Vieira.png
+│       ├── Dr.Natalia.png
+│       ├── Dr.Rafael.png
+│       ├── Dr.Ricardo Almeida Infectologista.png
+│       ├── Dr.Vanessa Souza.png
+│       └── Dra. Aline Tanaka em Consulta.png
+│
+└── README.md
+
 
 *Observação: os nomes e a organização das pastas devem corresponder aos arquivos existentes no repositório.*
 
