@@ -237,6 +237,19 @@ nav a:hover{
     border-radius: 6px;
 }
 
+#equipe a{
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #2f8fa3;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#equipe a:hover{
+    background-color: #12324a;
+}
+
 /*  ========================================
     agendamento
     ========================================*/
