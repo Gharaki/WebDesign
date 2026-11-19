@@ -893,3 +893,120 @@ body.dark-theme #botao-menu {
 body.dark-theme #botao-menu:hover {
     background-color: #d9a92f;
 }
+
+
+/* ========================================
+   CARROSSEL DE PROFISSIONAIS
+   ======================================== */
+
+#equipe .equipe-lista.carrossel-medicos {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 22px;
+    width: 100%;
+    margin: 30px auto 0;
+    padding: 10px 4px 22px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: thin;
+    scrollbar-color: #2f8fa3 #dbe4e2;
+}
+
+#equipe .equipe-lista.carrossel-medicos::-webkit-scrollbar {
+    height: 8px;
+}
+
+#equipe .equipe-lista.carrossel-medicos::-webkit-scrollbar-track {
+    background: #dbe4e2;
+    border-radius: 10px;
+}
+
+#equipe .equipe-lista.carrossel-medicos::-webkit-scrollbar-thumb {
+    background: #2f8fa3;
+    border-radius: 10px;
+}
+
+#equipe .carrossel-medicos .medico {
+    display: block;
+    flex: 0 0 280px;
+    width: 280px;
+    margin: 0;
+    scroll-snap-align: start;
+}
+
+#equipe .carrossel-medicos .medico-img {
+    width: 100%;
+}
+
+.controles-carrossel {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    margin: 22px 0 8px;
+}
+
+.controles-carrossel[hidden] {
+    display: none;
+}
+
+.controles-carrossel button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    background: #2f8fa3;
+    color: #fff;
+    font-size: 30px;
+    line-height: 1;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s, opacity 0.2s;
+}
+
+.controles-carrossel button:hover:not(:disabled) {
+    background: #12324a;
+    transform: scale(1.06);
+}
+
+.controles-carrossel button:disabled {
+    opacity: 0.35;
+    cursor: not-allowed;
+}
+
+.controles-carrossel button:focus-visible,
+#equipe .carrossel-medicos:focus-visible {
+    outline: 3px solid #f0c75e;
+    outline-offset: 3px;
+}
+
+body.dark-theme #equipe .equipe-lista.carrossel-medicos::-webkit-scrollbar-track {
+    background: #405767;
+}
+
+body.dark-theme #equipe .equipe-lista.carrossel-medicos {
+    scrollbar-color: #8ed9e5 #405767;
+}
+
+body.dark-theme .controles-carrossel button {
+    background: #2f8fa3;
+    color: #fff;
+}
+
+@media (max-width: 600px) {
+    #equipe .equipe-lista.carrossel-medicos {
+        gap: 14px;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    #equipe .carrossel-medicos .medico {
+        flex-basis: min(280px, 82vw);
+        width: min(280px, 82vw);
+    }
+}
