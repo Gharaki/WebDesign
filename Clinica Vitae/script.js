@@ -187,8 +187,53 @@ document.addEventListener("DOMContentLoaded", function () {
         );
 
         window.addEventListener("resize", atualizarControles);
-
         atualizarControles();
+    }
+
+    // ========================================
+    // ANIMAÇÕES SUAVES
+    // ========================================
+
+    const prefereMovimentoReduzido = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+    ).matches;
+
+    if (!prefereMovimentoReduzido && "IntersectionObserver" in window) {
+        const elementosAnimados = document.querySelectorAll(
+            "main > section, #equipe .medico, .diferencial, " +
+            ".estrutura-item, .etapa, .convenio, .depoimento, " +
+            ".item-contato, #footer .footer-conteudo > div"
+        );
+
+        if (elementosAnimados.length > 0) {
+            document.body.classList.add("animacoes-prontas");
+
+            const observadorAnimacoes = new IntersectionObserver(
+                function (entradas, observador) {
+                    entradas.forEach(function (entrada) {
+                        if (entrada.isIntersecting) {
+                            entrada.target.classList.add("visivel");
+                            observador.unobserve(entrada.target);
+                        }
+                    });
+                },
+                {
+                    threshold: 0.12,
+                    rootMargin: "0px 0px -40px 0px"
+                }
+            );
+
+            elementosAnimados.forEach(function (elemento, indice) {
+                elemento.classList.add("animacao-revelar");
+
+                elemento.style.setProperty(
+                    "--atraso-animacao",
+                    `${(indice % 4) * 90}ms`
+                );
+
+                observadorAnimacoes.observe(elemento);
+            });
+        }
     }
 
     // ========================================
@@ -228,7 +273,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (telefone) {
             telefone.addEventListener("input", function () {
-                let numeros = telefone.value.replace(/\D/g, "").slice(0, 11);
+                let numeros = telefone.value
+                    .replace(/\D/g, "")
+                    .slice(0, 11);
 
                 if (numeros.length > 10) {
                     telefone.value = numeros.replace(

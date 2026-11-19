@@ -1,40 +1,42 @@
-/*  ========================================
-    CONFIGURAÇÃOES GERAIS DO SITE
-    ========================================*/
+
+/* ========================================
+   CONFIGURAÇÕES GERAIS DO SITE
+   ======================================== */
+
 * {
-    box-sizing: border-box; /*garante que o padding e a borda não aumentem o tamanho do elemento*/
-    margin: 0; /*remove a margem padrão do navegador*/
-    padding: 0; /*remove o padding padrão do navegador*/
-
-}
-h1,h2,h3{
-    color: #12324a; /*cor geral do site*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-h2{
+h1, h2, h3 {
+    color: #12324a;
+}
+
+h2 {
     text-align: center;
     margin-bottom: 20px;
 }
 
-p{
+p {
     margin-bottom: 16px;
 }
 
 a {
-    color: inherit; /*herda a cor do elemento master*/
-    text-decoration: none; /*remove o sublinhado do link*/
+    color: inherit;
+    text-decoration: none;
 }
 
-/*  ========================================
-    CABEÇALHO
-    ========================================*/
+/* ========================================
+   CABEÇALHO
+   ======================================== */
 
-.logo{
-    display:flex;
+.logo {
+    display: flex;
     align-items: center;
 }
 
-.logo img{
+.logo img {
     width: 120px;
     height: auto;
     display: block;
@@ -42,9 +44,9 @@ a {
 }
 
 #header {
-    position: sticky; /*mantem a posição fixa*/
-    top: 0;/*condição de até onde vai ficar fxa*/
-    z-index: 10; /*garante que o header fique acima de outros elementos*/
+    position: sticky;
+    top: 0;
+    z-index: 10;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -63,19 +65,18 @@ a {
     gap: 24px;
 }
 
-nav a{
+nav a {
     color: white;
     padding: 8px;
 }
 
-nav a:hover{
-    /*hover é a ação de passar o mouse por cima do elemento*/
+nav a:hover {
     color: #8ed9e5;
 }
 
-/*  ========================================
-    PÁGINA INICIAL
-    ========================================*/
+/* ========================================
+   PÁGINA INICIAL
+   ======================================== */
 
 #home {
     height: 300px;
@@ -86,46 +87,46 @@ nav a:hover{
     background-color: white;
 }
 
-#home h1{
-    font-size:30px;
+#home h1 {
+    font-size: 30px;
 }
 
-#home p{
+#home p {
     max-width: 700px;
     margin: 20px auto;
 }
 
-#home a{
+#home a {
     display: inline-block;
     padding: 12px 24px;
     margin-top: 10px;
     background-color: #2f8fa3;
     color: white;
-    text-decoration: none;
     border-radius: 5px;
 }
 
-#home a:hover{
+#home a:hover {
     background-color: #12324a;
 }
 
-/*  ========================================
-    epcialidades
-    ========================================*/
-#diferenciais{
-    padding: 50px 5%;  
+/* ========================================
+   DIFERENCIAIS
+   ======================================== */
+
+#diferenciais {
+    padding: 50px 5%;
     text-align: center;
 }
-.lista-diferenciais{
+
+.lista-diferenciais {
     display: flex;
-    justify-content: center; 
-    gap: 20px;
-    flex-wrap: wrap; 
-    gap: 30px; 
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
-.diferencial{
-    flex: 1 ; /*o flex grow é utilizado para que os elementos cresçam de acordo com o tamanho da tela*/
+.diferencial {
+    flex: 1;
     min-width: 220px;
     max-width: 300px;
     padding: 25px;
@@ -134,47 +135,52 @@ nav a:hover{
     border-radius: 50px;
 }
 
-.diferencial h3{
-    margin-top: 0px;
+.diferencial h3 {
+    margin-top: 0;
 }
 
-/*  ========================================
-    sobre a clinica
-    ========================================*/
-#sobre{
+/* ========================================
+   SOBRE A CLÍNICA
+   ======================================== */
+
+#sobre {
     padding: 50px 5%;
     background-color: #e9f0f2;
 }
-#sobre h2{
+
+#sobre h2 {
     text-align: center;
 }
 
-#sobre h3{
+#sobre h3 {
     margin-top: 25px;
     margin-bottom: 8px;
 }
 
-#sobre p{
+#sobre p {
     max-width: 900px;
-    margin-left:  auto;
+    margin-left: auto;
     margin-right: auto;
 }
 
-/*  ========================================
-    especialidades 
-    ========================================*/
-#especialidades{
+/* ========================================
+   ESPECIALIDADES
+   ======================================== */
+
+#especialidades {
     padding: 50px 5%;
 }
-#especialidades .intro{
+
+#especialidades .intro {
     text-align: center;
     margin-bottom: 35px;
 }
 
-#especialidades > div{
+#especialidades > div {
     padding: 25px;
 }
-#especialidades > div > div{
+
+#especialidades > div > div {
     padding: 25px;
     margin: 15px 0;
     background-color: white;
@@ -182,11 +188,11 @@ nav a:hover{
     border-radius: 8px;
 }
 
-#especialidades h3{
-    margin-top: 0px;
+#especialidades h3 {
+    margin-top: 0;
 }
 
-#especialidades a{
+#especialidades a {
     display: inline-block;
     padding: 8px 15px;
     background-color: #2f8fa3;
@@ -195,21 +201,22 @@ nav a:hover{
     margin-top: 10px;
 }
 
-#especialidades a:hover{
+#especialidades a:hover {
     background-color: #12324a;
 }
 
-/*  ========================================
-    Equipe médica 
-    ========================================*/
+/* ========================================
+   EQUIPE MÉDICA
+   ======================================== */
 
-#equipe{
+#equipe {
     padding: 50px 5%;
     text-align: center;
     background-color: #e9f0f2;
 }
-.medico{
-    display:inline-block;
+
+.medico {
+    display: inline-block;
     vertical-align: top;
     width: 280px;
     padding: 20px;
@@ -219,17 +226,16 @@ nav a:hover{
     border-radius: 8px;
 }
 
-.medico h3{
+.medico h3 {
     margin-top: 15px;
 }
 
-.medico .cargo{
+.medico .cargo {
     color: #2f8fa3;
     font-weight: bold;
 }
 
 .medico-img {
-    
     height: 220px;
     object-fit: cover;
     object-position: center;
@@ -237,7 +243,7 @@ nav a:hover{
     border-radius: 6px;
 }
 
-#equipe a{
+#equipe a {
     display: inline-block;
     padding: 8px 15px;
     background-color: #2f8fa3;
@@ -246,16 +252,10 @@ nav a:hover{
     margin-top: 10px;
 }
 
-#especialidades a:hover{
-    background-color: #12324a;
-}
-
-
 /* ========================================
-   PÁGINA DE AGENDAMENTO - MODERNIZAÇÃO
+   PÁGINA DE AGENDAMENTO
    ======================================== */
 
-/* Como agendar */
 #como-agendar {
     padding: 60px 8%;
     text-align: center;
@@ -323,6 +323,7 @@ nav a:hover{
 }
 
 /* Formulário */
+
 #agendamento {
     padding: 60px 8%;
     background-color: #e9f0f2;
@@ -403,6 +404,7 @@ nav a:hover{
 }
 
 /* Consentimento */
+
 #agendamento form > .campo {
     margin: 10px 0 25px;
 }
@@ -425,6 +427,7 @@ nav a:hover{
 }
 
 /* Botão */
+
 #agendamento button {
     display: block;
     width: 100%;
@@ -440,7 +443,8 @@ nav a:hover{
     transform: translateY(-2px);
 }
 
-/* Responsividade */
+/* Responsividade do agendamento */
+
 @media (max-width: 768px) {
     #como-agendar,
     #orientacoes-consulta,
@@ -480,59 +484,61 @@ nav a:hover{
     }
 }
 
+/* ========================================
+   CONVÊNIOS
+   ======================================== */
 
-/*  ========================================
-    Convenios
-    ========================================*/
-.convenios{
+.convenios {
     padding: 50px 5%;
     text-align: center;
-    background-color: #e9f0f2;;
+    background-color: #e9f0f2;
 }
 
-.convenios-lista{
+.convenios-lista {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; gap: 25px;
+    flex-wrap: wrap;
+    gap: 25px;
     margin: 30px 0;
-} 
-.convenio{
+}
+
+.convenio {
     width: 180px;
     padding: 20px;
     border: 1px solid #dbe4e2;
     border-radius: 8px;
 }
 
-.convenio p{
+.convenio p {
     margin-top: 15px;
     margin-bottom: 0;
 }
 
-.img-convenio{
+.img-convenio {
     width: 100%;
     height: 80px;
     object-fit: contain;
     display: block;
 }
 
+/* ========================================
+   DEPOIMENTOS
+   ======================================== */
 
-/*  ========================================
-    Depoimentos
-    ========================================*/
-
-#depoimentos{
+#depoimentos {
     padding: 50px 5%;
 }
 
-.depoimentos-lista{display: flex;
+.depoimentos-lista {
+    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
     margin-top: 30px;
 }
 
-.depoimento{
+.depoimento {
     flex: 1;
     min-width: 220px;
     max-width: 350px;
@@ -542,20 +548,22 @@ nav a:hover{
     border-radius: 5px;
 }
 
-.depoimento p:last-child{
+.depoimento p:last-child {
     color: #64747c;
     font-weight: bold;
     margin-bottom: 0;
 }
-/*  ========================================
-    FAQ
-    ========================================*/
-#faq{
+
+/* ========================================
+   FAQ
+   ======================================== */
+
+#faq {
     padding: 50px 8%;
     background-color: #e9f0f2;
 }
 
-#faq details{
+#faq details {
     max-width: 850px;
     margin: 15px auto;
     padding: 20px;
@@ -564,26 +572,26 @@ nav a:hover{
     border-radius: 5px;
 }
 
-#faq summary{
+#faq summary {
     color: #12324a;
     font-weight: bold;
-    cursor: pointer; 
+    cursor: pointer;
 }
 
-#faq details p{
+#faq details p {
     margin-top: 15px;
     margin-bottom: 0;
 }
 
-/*  ========================================
-    contato
-    ========================================*/
+/* ========================================
+   CONTATO
+   ======================================== */
 
-#contato{
+#contato {
     padding: 50px 5%;
 }
 
-.info-contato{
+.info-contato {
     display: flex;
     justify-content: center;
     align-items: stretch;
@@ -592,30 +600,31 @@ nav a:hover{
     margin: 30px 0;
 }
 
-.item-contato{
+.item-contato {
     flex: 1;
-    min-width: 200px; 
+    min-width: 200px;
     padding: 20px;
     background-color: white;
     border: 1px solid #dbe4e2;
     border-radius: 8px;
 }
 
-.item-contato h3{
+.item-contato h3 {
     margin-top: 0;
 }
 
-address{
+address {
     font-style: normal;
 }
 
-#contato form{
-    padding: 25px; 
+#contato form {
+    padding: 25px;
     background-color: white;
-    border: 1px solid #dbe4e2;border-radius: 8px;
+    border: 1px solid #dbe4e2;
+    border-radius: 8px;
 }
 
-#contato button{
+#contato button {
     padding: 12px 24px;
     border: none;
     border-radius: 5px;
@@ -624,49 +633,54 @@ address{
     cursor: pointer;
 }
 
-#contato button:hover{
+#contato button:hover {
     background-color: #12324a;
 }
 
-/*  ========================================
-    footer
-    ========================================*/
+/* ========================================
+   FOOTER
+   ======================================== */
 
-#footer{
+#footer {
     padding: 40px 5%;
     background-color: #12324a;
     color: white;
 }
 
-#footer h3{
+#footer h3 {
     color: white;
 }
 
-.footer-conteudo{
+.footer-conteudo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    gap: 30px; 
+    gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.footer-clinica, .footer-links, .footer-contato, .footer-redes-sociais{
+.footer-clinica,
+.footer-links,
+.footer-contato,
+.footer-redes-sociais {
     flex: 1;
     min-width: 180px;
 }
 
-.footer-links a, .footer-redes-sociais a{
+.footer-links a,
+.footer-redes-sociais a {
     display: block;
-    margin-bottom:
-    8px; color: white;
+    margin-bottom: 8px;
+    color: white;
 }
 
-.footer-links a:hover, .footer-redes-sociais a:hover{
+.footer-links a:hover,
+.footer-redes-sociais a:hover {
     color: #8ed9e5;
 }
 
-.footer-direitos{
+.footer-direitos {
     text-align: center;
     padding-top: 25px;
     margin-top: 30px;
@@ -674,10 +688,9 @@ address{
     font-size: 14px;
 }
 
-
-/*  ========================================
-    dicas de saude
-    ========================================*/
+/* ========================================
+   DICAS DE SAÚDE
+   ======================================== */
 
 #dicas-saude {
     padding: 50px 5%;
@@ -894,7 +907,6 @@ body.dark-theme #botao-menu:hover {
     background-color: #d9a92f;
 }
 
-
 /* ========================================
    CARROSSEL DE PROFISSIONAIS
    ======================================== */
@@ -1008,5 +1020,86 @@ body.dark-theme .controles-carrossel button {
     #equipe .carrossel-medicos .medico {
         flex-basis: min(280px, 82vw);
         width: min(280px, 82vw);
+    }
+}
+
+/* ========================================
+   FEATURE 04 — ANIMAÇÕES SUAVES
+   ======================================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+button,
+input,
+select,
+textarea,
+.medico,
+.diferencial,
+.estrutura-item,
+.etapa,
+.convenio,
+.depoimento,
+.item-contato {
+    transition:
+        color 0.25s ease,
+        background-color 0.25s ease,
+        border-color 0.25s ease,
+        box-shadow 0.25s ease,
+        transform 0.25s ease;
+}
+
+.medico:hover,
+.diferencial:hover,
+.estrutura-item:hover,
+.etapa:hover,
+.convenio:hover,
+.depoimento:hover,
+.item-contato:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
+}
+
+body.animacoes-prontas .animacao-revelar {
+    opacity: 0;
+    transform: translateY(20px);
+    transition:
+        opacity 0.65s ease,
+        transform 0.65s ease;
+    transition-delay: var(--atraso-animacao, 0ms);
+}
+
+body.animacoes-prontas .animacao-revelar.visivel {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Acessibilidade: redução de movimento */
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        transition-delay: 0ms !important;
+    }
+
+    .medico:hover,
+    .diferencial:hover,
+    .estrutura-item:hover,
+    .etapa:hover,
+    .convenio:hover,
+    .depoimento:hover,
+    .item-contato:hover {
+        transform: none;
     }
 }
