@@ -102,6 +102,7 @@ nav a:hover {
     margin-top: 10px;
     background-color: #2f8fa3;
     color: white;
+    text-decoration: none;
     border-radius: 5px;
 }
 
@@ -121,8 +122,8 @@ nav a:hover {
 .lista-diferenciais {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .diferencial {
@@ -250,6 +251,10 @@ nav a:hover {
     color: white;
     border-radius: 5px;
     margin-top: 10px;
+}
+
+#especialidades a:hover {
+    background-color: #12324a;
 }
 
 /* ========================================
@@ -1062,6 +1067,8 @@ textarea,
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.09);
 }
 
+/* Conteúdo só é ocultado quando o JavaScript confirma suporte ao observador. */
+
 body.animacoes-prontas .animacao-revelar {
     opacity: 0;
     transform: translateY(20px);
@@ -1075,8 +1082,6 @@ body.animacoes-prontas .animacao-revelar.visivel {
     opacity: 1;
     transform: translateY(0);
 }
-
-/* Acessibilidade: redução de movimento */
 
 @media (prefers-reduced-motion: reduce) {
     html {
@@ -1100,6 +1105,90 @@ body.animacoes-prontas .animacao-revelar.visivel {
     .convenio:hover,
     .depoimento:hover,
     .item-contato:hover {
+        transform: none;
+    }
+}
+
+/* ========================================
+   FEATURE 05 — BOTÃO VOLTAR AO TOPO
+   ======================================== */
+
+#voltar-ao-topo {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 0;
+    border-radius: 50%;
+    background-color: #2f8fa3;
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1;
+    cursor: pointer;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.22);
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(12px);
+    transition:
+        opacity 0.25s ease,
+        visibility 0.25s ease,
+        transform 0.25s ease,
+        background-color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+#voltar-ao-topo.visivel {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+#voltar-ao-topo:hover {
+    background-color: #12324a;
+    transform: translateY(-4px);
+    box-shadow: 0 7px 18px rgba(0, 0, 0, 0.25);
+}
+
+#voltar-ao-topo:focus-visible {
+    outline: 3px solid #f0c75e;
+    outline-offset: 4px;
+}
+
+body.dark-theme #voltar-ao-topo {
+    background-color: #8ed9e5;
+    color: #17232d;
+}
+
+body.dark-theme #voltar-ao-topo:hover {
+    background-color: #f0c75e;
+}
+
+@media (max-width: 600px) {
+    #voltar-ao-topo {
+        right: 16px;
+        bottom: 16px;
+        width: 44px;
+        height: 44px;
+        font-size: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    #voltar-ao-topo {
+        transition: none;
+        transform: none;
+    }
+
+    #voltar-ao-topo:hover {
         transform: none;
     }
 }
