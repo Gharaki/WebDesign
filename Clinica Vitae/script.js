@@ -1,4 +1,3 @@
-
 /*
  * Início da integração do JavaScript externo.
  */
@@ -55,8 +54,55 @@ document.addEventListener("DOMContentLoaded", function () {
                 : "claro";
 
             localStorage.setItem("tema", novoTema);
-
             atualizarBotaoTema();
+        });
+    }
+
+    // ========================================
+    // MENU RESPONSIVO
+    // ========================================
+
+    const navegacao = header ? header.querySelector("nav") : null;
+
+    if (header && navegacao) {
+        const botaoMenu = document.createElement("button");
+
+        botaoMenu.id = "botao-menu";
+        botaoMenu.type = "button";
+        botaoMenu.textContent = "☰";
+        botaoMenu.setAttribute("aria-label", "Abrir menu");
+        botaoMenu.setAttribute("aria-expanded", "false");
+
+        // Identifica a navegação para acessibilidade.
+        if (!navegacao.id) {
+            navegacao.id = "menu-principal";
+        }
+
+        botaoMenu.setAttribute("aria-controls", navegacao.id);
+
+        // Insere o botão antes dos links de navegação.
+        header.insertBefore(botaoMenu, navegacao);
+
+        // Abre ou fecha o menu.
+        botaoMenu.addEventListener("click", function () {
+            const menuAberto = header.classList.toggle("menu-aberto");
+
+            botaoMenu.textContent = menuAberto ? "✕" : "☰";
+            botaoMenu.setAttribute(
+                "aria-label",
+                menuAberto ? "Fechar menu" : "Abrir menu"
+            );
+            botaoMenu.setAttribute("aria-expanded", String(menuAberto));
+        });
+
+        // Fecha o menu depois de clicar em um link.
+        navegacao.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                header.classList.remove("menu-aberto");
+                botaoMenu.textContent = "☰";
+                botaoMenu.setAttribute("aria-label", "Abrir menu");
+                botaoMenu.setAttribute("aria-expanded", "false");
+            });
         });
     }
 
@@ -70,7 +116,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Executa este código somente na página que possui o formulário.
     if (formularioAgendamento) {
-
         const dataConsulta = document.getElementById("data-consulta");
         const telefone = document.getElementById("telefone");
         const emailAgendamento = document.getElementById("email");
@@ -104,9 +149,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // Aplica máscara ao telefone enquanto o usuário digita.
         if (telefone) {
             telefone.addEventListener("input", function () {
-                let numeros = telefone.value
-                    .replace(/\D/g, "")
-                    .slice(0, 11);
+                let numeros = telefone.value.replace(/\D/g, "").slice(0, 11);
 
                 if (numeros.length > 10) {
                     telefone.value = numeros.replace(
@@ -131,18 +174,15 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Valida os dados antes de confirmar o agendamento.
         formularioAgendamento.addEventListener("submit", function (evento) {
-
             // Valida a data da consulta.
             if (dataConsulta) {
                 const hoje = obterDataAtual();
 
                 if (!dataConsulta.value || dataConsulta.value < hoje) {
                     evento.preventDefault();
-
                     dataConsulta.setCustomValidity(
                         "Selecione hoje ou uma data futura para a consulta."
                     );
-
                     dataConsulta.reportValidity();
                     return;
                 }
@@ -160,19 +200,14 @@ document.addEventListener("DOMContentLoaded", function () {
             // Verifica se o usuário aceitou o consentimento.
             if (consentimento && !consentimento.checked) {
                 evento.preventDefault();
-
                 alert("Aceite o consentimento antes de continuar.");
-
                 consentimento.focus();
                 return;
             }
 
-            // Impede o envio real, pois o projeto ainda não possui
-            // integração com um sistema de agendamento.
+            // O projeto ainda não possui integração com um sistema real.
             evento.preventDefault();
-
             alert("Solicitação de agendamento enviada com sucesso!");
         });
     }
-
 });
